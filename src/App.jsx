@@ -8,11 +8,13 @@ import sixImage from "../src/assets/dida/IMG-20240909-WA0062.jpg";
 import sevenImage from "../src/assets/dida/IMG-20240909-WA0063.jpg";
 import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
 import nImage from "../src/assets/dida/IMG-20240909-WA0065.jpg";
+import bgsongs from "../src/assets/arilasso_cinta-terahir.mp3";
 
 function App() {
   return (
     <>
       <div>
+        <audio src={bgsongs} autoPlay loop />
         <section
           className="hero h-screen bg-center bg-cover flex items-center justify-center"
           style={{
