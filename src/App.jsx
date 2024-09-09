@@ -54,7 +54,7 @@ function App() {
         <section
           className="hero h-screen bg-center bg-cover flex items-center justify-center"
           style={{
-            backgroundImage: `url(${fImage})`,
+            backgroundImage: `url(${fiveImage})`,
           }}
         >
           <div className="overlay bg-black bg-opacity-50 p-10 rounded-lg text-center text-white">
