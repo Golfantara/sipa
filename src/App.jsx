@@ -9,16 +9,52 @@ import sevenImage from "../src/assets/dida/IMG-20240909-WA0063.jpg";
 import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
 import nImage from "../src/assets/dida/IMG-20240909-WA0065.jpg";
 import bgsongs from "../src/assets/arilasso_cinta-terahir.mp3";
+import { useState, useRef } from "react";
 
 function App() {
+  const [isPlaying, setIsPlaying] = useState(false); // For controlling when music starts
+  const audioRef = useRef(null);
+
+  // Start music on button click
+  const startMusic = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = false; // Unmute the audio
+      audioRef.current.play(); // Play the audio
+      setIsPlaying(true); // Hide the welcome screen
+    }
+  };
+
   return (
     <>
       <div>
-        <audio src={bgsongs} autoPlay loop />
+        {/* Audio element */}
+        <audio ref={audioRef} loop>
+          <source src={bgsongs} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        {/* Conditional welcome screen */}
+        {!isPlaying && (
+          <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+            <div className="text-center">
+              <h1 className="text-white text-4xl mb-4">
+                Welcome to Mas Dida & Neng Syifa's Journey
+              </h1>
+              <button
+                onClick={startMusic}
+                className="bg-pink-600 hover:bg-pink-700 text-white py-3 px-6 rounded-lg"
+              >
+                Start Music & Enter
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Main content */}
         <section
           className="hero h-screen bg-center bg-cover flex items-center justify-center"
           style={{
-            backgroundImage: `url(${fiveImage})`,
+            backgroundImage: `url(${fImage})`,
           }}
         >
           <div className="overlay bg-black bg-opacity-50 p-10 rounded-lg text-center text-white">
