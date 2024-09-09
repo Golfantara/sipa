@@ -1,4 +1,13 @@
 import "./index.css";
+import fImage from "../src/assets/dida/IMG-20240909-WA0057.jpg";
+import sImage from "../src/assets/dida/IMG-20240909-WA0058.jpg";
+import tImage from "../src/assets/dida/IMG-20240909-WA0059.jpg";
+import fourImage from "../src/assets/dida/IMG-20240909-WA0060.jpg";
+import fiveImage from "../src/assets/dida/IMG-20240909-WA0061.jpg";
+import sixImage from "../src/assets/dida/IMG-20240909-WA0062.jpg";
+import sevenImage from "../src/assets/dida/IMG-20240909-WA0063.jpg";
+import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
+import nImage from "../src/assets/dida/IMG-20240909-WA0065.jpg";
 
 function App() {
   return (
@@ -7,7 +16,7 @@ function App() {
         <section
           className="hero h-screen bg-center bg-cover flex items-center justify-center"
           style={{
-            backgroundImage: "url('src/assets/IMG-20240909-WA0061.jpg')",
+            backgroundImage: `url(${fiveImage})`,
           }}
         >
           <div className="overlay bg-black bg-opacity-50 p-10 rounded-lg text-center text-white">
@@ -83,52 +92,52 @@ function App() {
 
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0057.jpg" alt="" />
+              <img src={fImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0063.jpg" alt="" />
+              <img src={sevenImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0062.jpg" alt="" />
+              <img src={sixImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0058.jpg" alt="" />
+              <img src={sImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0059.jpg" alt="" />
+              <img src={tImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-2 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0063.jpg" alt="" />
+              <img src={sevenImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-4 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0064.jpg" alt="" />
+              <img src={eImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0060.jpg" alt="" />
+              <img src={fourImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0061.jpg" alt="" />
+              <img src={fiveImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
-              <img src="src/assets//IMG-20240909-WA0065.jpg" alt="" />
+              <img src={nImage} alt="" />
             </div>
           </div>
         </div>
@@ -137,8 +146,6 @@ function App() {
             <p>&copy; 2024 Mas Dida & Neng Syifa. All rights reserved.</p>
           </div>
         </footer>
-
-        <script src="dist/js/script.js"></script>
       </div>
     </>
   );
