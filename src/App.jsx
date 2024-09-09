@@ -83,11 +83,19 @@ function App() {
         </div>
         <div className="p-2 font-serif grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 overflow-hidden">
           <h2 className="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
-            <span className="self-center">@syifaazzaaa</span>
+            <a href="https://www.instagram.com/syifazzaa/">
+              <span className="self-center text-blue-700 underline">
+                @syifaazzaaa
+              </span>
+            </a>
           </h2>
 
           <div className="h-15 text-lg font-bold text-slate-700 md:col-start-2 md:row-start-2 md:flex">
-            <span className="self-end">@didadejan3</span>
+            <a href="https://www.instagram.com/didadejan3/">
+              <span className="self-end text-blue-700 underline">
+                @didadejan3
+              </span>
+            </a>
           </div>
 
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
