@@ -13,6 +13,7 @@ import { useState, useRef } from "react";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false); // For controlling when music starts
+  const [selectedImage, setSelectedImage] = useState(null); // For full-screen image
   const audioRef = useRef(null);
 
   // Start music on button click
@@ -22,6 +23,16 @@ function App() {
       audioRef.current.play(); // Play the audio
       setIsPlaying(true); // Hide the welcome screen
     }
+  };
+
+  // Handle image click to display full-screen
+  const handleImageClick = (imageSrc) => {
+    setSelectedImage(imageSrc);
+  };
+
+  // Close the full-screen view
+  const closeFullscreen = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -95,25 +106,7 @@ function App() {
           </div>
         </section>
 
-        <section id="milestones" className="milestones-section py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-pink-600 mb-8">
-              Milestones
-            </h2>
-            <ul className="list-none text-center">
-              <li className="text-lg mb-4">
-                <strong>3 August 2024</strong> - First Meeting
-              </li>
-              <li className="text-lg mb-4">
-                <strong>28 August 2024</strong> - First Vacation
-              </li>
-              <li className="text-lg mb-4">
-                <strong>SOON</strong> - Anniversary Celebration
-              </li>
-            </ul>
-          </div>
-        </section>
-
+        {/* Image gallery */}
         <div>
           <h2 className="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
             <span className="self-center">Welcome To Our Gallery</span>
@@ -137,56 +130,104 @@ function App() {
           </div>
 
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(fImage)}
+            >
               <img src={fImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(sevenImage)}
+            >
               <img src={sevenImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(sixImage)}
+            >
               <img src={sixImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(sImage)}
+            >
               <img src={sImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(tImage)}
+            >
               <img src={tImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-2 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(sevenImage)}
+            >
               <img src={sevenImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-4 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(eImage)}
+            >
               <img src={eImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(fourImage)}
+            >
               <img src={fourImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(fiveImage)}
+            >
               <img src={fiveImage} alt="" />
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(nImage)}
+            >
               <img src={nImage} alt="" />
             </div>
           </div>
         </div>
+
+        {/* Fullscreen image modal */}
+        {selectedImage && (
+          <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+            <button
+              onClick={closeFullscreen}
+              className="absolute top-4 right-4 text-white text-3xl"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedImage}
+              alt="Fullscreen"
+              className="max-w-full max-h-full"
+            />
+          </div>
+        )}
+
         <footer className="bg-gray-900 text-white py-6">
           <div className="text-center">
             <p>&copy; 2024 Mas Dida & Neng Syifa. All rights reserved.</p>
