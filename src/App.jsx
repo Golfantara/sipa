@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="bg-[#F7EED3]">
         {/* Audio element */}
         <audio ref={audioRef} loop>
           <source src={bgsongs} type="audio/mpeg" />
@@ -85,7 +85,7 @@ function App() {
           </div>
         </section>
 
-        <section id="story" className="story-section py-16 bg-white">
+        <section id="story" className="story-section py-16">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-pink-600 mb-8">
               Our Story
@@ -106,10 +106,31 @@ function App() {
           </div>
         </section>
 
+        <section id="milestones" className="milestones-section py-16">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center text-pink-600 mb-8">
+              Milestones
+            </h2>
+            <ul className="list-none text-center">
+              <li className="text-lg mb-4">
+                <strong>3 August 2024</strong> - First Meeting
+              </li>
+              <li className="text-lg mb-4">
+                <strong>28 August 2024</strong> - First Vacation
+              </li>
+              <li className="text-lg mb-4">
+                <strong>SOON</strong> - Anniversary Celebration
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* Image gallery */}
         <div>
           <h2 className="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
-            <span className="self-center">Welcome To Our Gallery</span>
+            <span className="self-center text-4xl font-bold text-center text-pink-600 mb-8">
+              Welcome To Our Gallery
+            </span>
           </h2>
         </div>
         <div className="p-2 font-serif grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 overflow-hidden">
