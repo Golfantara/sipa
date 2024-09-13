@@ -8,6 +8,8 @@ import sixImage from "../src/assets/dida/IMG-20240909-WA0062.jpg";
 import sevenImage from "../src/assets/dida/IMG-20240909-WA0063.jpg";
 import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
 import nImage from "../src/assets/dida/IMG-20240909-WA0065.jpg";
+import tenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_0a489c86.jpg";
+import elevenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_2e11953e.jpg";
 import bgsongs from "../src/assets/arilasso_cinta-terahir.mp3";
 import { useState, useRef } from "react";
 
@@ -228,6 +230,22 @@ function App() {
               onClick={() => handleImageClick(nImage)}
             >
               <img src={nImage} alt="" />
+            </div>
+          </div>
+          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(tenImage)}
+            >
+              <img src={tenImage} alt="" />
+            </div>
+          </div>
+          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(elevenImage)}
+            >
+              <img src={elevenImage} alt="" />
             </div>
           </div>
         </div>
