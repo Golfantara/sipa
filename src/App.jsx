@@ -153,7 +153,7 @@ function App() {
             >
               <img src={fImage} alt="" />
             </div>
-            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
               <p className="text-sm text-slate-600">Arjasari Rock Hill</p>
               <p className="text-xs text-slate-500">August 28, 2024</p>
             </div>
@@ -166,7 +166,7 @@ function App() {
             >
               <img src={eImage} alt="" />
             </div>
-            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
               <p className="text-sm text-slate-600">Desa Wargaluyu</p>
               <p className="text-xs text-slate-500">August 30, 2024</p>
             </div>
@@ -178,7 +178,7 @@ function App() {
             >
               <img src={tenImage} alt="" />
             </div>
-            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
               <p className="text-sm text-slate-600">Dago Atas</p>
               <p className="text-xs text-slate-500">September 14, 2024</p>
             </div>
@@ -190,7 +190,7 @@ function App() {
             >
               <img src={elevenImage} alt="" />
             </div>
-            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
               <p className="text-sm text-slate-600">Opera Courtyard</p>
               <p className="text-xs text-slate-500">September 14, 2024</p>
             </div>
