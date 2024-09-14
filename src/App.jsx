@@ -1,13 +1,7 @@
 import "./index.css";
 import fImage from "../src/assets/dida/IMG-20240909-WA0057.jpg";
-import sImage from "../src/assets/dida/IMG-20240909-WA0058.jpg";
-import tImage from "../src/assets/dida/IMG-20240909-WA0059.jpg";
-import fourImage from "../src/assets/dida/IMG-20240909-WA0060.jpg";
 import fiveImage from "../src/assets/dida/IMG-20240909-WA0061.jpg";
-import sixImage from "../src/assets/dida/IMG-20240909-WA0062.jpg";
-import sevenImage from "../src/assets/dida/IMG-20240909-WA0063.jpg";
 import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
-import nImage from "../src/assets/dida/IMG-20240909-WA0065.jpg";
 import tenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_0a489c86.jpg";
 import elevenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_2e11953e.jpg";
 import bgsongs from "../src/assets/arilasso_cinta-terahir.mp3";
@@ -159,47 +153,12 @@ function App() {
             >
               <img src={fImage} alt="" />
             </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(sevenImage)}
-            >
-              <img src={sevenImage} alt="" />
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+              <p className="text-sm text-slate-600">Arjasari Rock Hill</p>
+              <p className="text-xs text-slate-500">August 28, 2024</p>
             </div>
           </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(sixImage)}
-            >
-              <img src={sixImage} alt="" />
-            </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(sImage)}
-            >
-              <img src={sImage} alt="" />
-            </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(tImage)}
-            >
-              <img src={tImage} alt="" />
-            </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-2 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(sevenImage)}
-            >
-              <img src={sevenImage} alt="" />
-            </div>
-          </div>
+
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-4 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div
               className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
@@ -207,29 +166,9 @@ function App() {
             >
               <img src={eImage} alt="" />
             </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(fourImage)}
-            >
-              <img src={fourImage} alt="" />
-            </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(fiveImage)}
-            >
-              <img src={fiveImage} alt="" />
-            </div>
-          </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
-            <div
-              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
-              onClick={() => handleImageClick(nImage)}
-            >
-              <img src={nImage} alt="" />
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+              <p className="text-sm text-slate-600">Desa Wargaluyu</p>
+              <p className="text-xs text-slate-500">August 30, 2024</p>
             </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
@@ -239,6 +178,10 @@ function App() {
             >
               <img src={tenImage} alt="" />
             </div>
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+              <p className="text-sm text-slate-600">Dago Atas</p>
+              <p className="text-xs text-slate-500">September 14, 2024</p>
+            </div>
           </div>
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div
@@ -246,6 +189,10 @@ function App() {
               onClick={() => handleImageClick(elevenImage)}
             >
               <img src={elevenImage} alt="" />
+            </div>
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-2 text-center">
+              <p className="text-sm text-slate-600">Opera Courtyard</p>
+              <p className="text-xs text-slate-500">September 14, 2024</p>
             </div>
           </div>
         </div>
