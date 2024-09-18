@@ -2,9 +2,9 @@ import "./index.css";
 import fImage from "../src/assets/dida/IMG-20240909-WA0057.jpg";
 import fiveImage from "../src/assets/dida/IMG-20240909-WA0061.jpg";
 import eImage from "../src/assets/dida/IMG-20240909-WA0064.jpg";
-import tenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_0a489c86.jpg";
 import elevenImage from "../src/assets/dida/WhatsApp Image 2024-09-13 at 23.57.35_2e11953e.jpg";
-import bgsongs from "../src/assets/arilasso_cinta-terahir.mp3";
+import twelveImage from "../src/assets/dida/WhatsApp Image 2024-09-16 at 15.47.55_de162763.jpg";
+import bgsongs from "../src/assets/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) (128 kbps).mp3";
 import { useState, useRef } from "react";
 
 function App() {
@@ -171,7 +171,7 @@ function App() {
               <p className="text-xs text-slate-500">August 30, 2024</p>
             </div>
           </div>
-          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
+          {/* <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div
               className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
               onClick={() => handleImageClick(tenImage)}
@@ -182,7 +182,7 @@ function App() {
               <p className="text-sm text-slate-600">Dago Atas</p>
               <p className="text-xs text-slate-500">September 14, 2024</p>
             </div>
-          </div>
+          </div> */}
           <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
             <div
               className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
@@ -193,6 +193,19 @@ function App() {
             <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
               <p className="text-sm text-slate-600">Opera Courtyard</p>
               <p className="text-xs text-slate-500">September 14, 2024</p>
+            </div>
+          </div>
+
+          <div className="h-15 bg-blue-500 aspect-[3/4] rounded-lg md:aspect-[3/4] xl:aspect-[3/4] md:col-start-3 overflow-hidden group relative hover:scale-95 transitio duration-500">
+            <div
+              className="image-container w-full h-full absolute bg-cover group-hover:scale-125 transition-all group-hover:rotate-12 duration-500"
+              onClick={() => handleImageClick(twelveImage)}
+            >
+              <img src={twelveImage} alt="" />
+            </div>
+            <div className="absolute bottom-0 bg-opacity-75 bg-white p-1 text-center rounded-tr-lg">
+              <p className="text-sm text-slate-600">Bandung</p>
+              <p className="text-xs text-slate-500">September 16, 2024</p>
             </div>
           </div>
         </div>
