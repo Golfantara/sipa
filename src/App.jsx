@@ -102,6 +102,28 @@ function App() {
           </div>
         </section>
 
+        <section id="ldr" className="ldr-section py-8 ">
+          <div className="max-w-3xl mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold text-center text-pink-600 mb-8">
+              A Little Distance, A Lot of Love
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-700 mb-4">
+              Since September 20, 2024, we've been living apart, but every day
+              brings us closer in ways that really matter. This distance is just
+              a chapter, and our story is about much more-love, trust, and the
+              moments we share in our hearts.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700 mb-4">
+              With every sunrise and every late-night chat, we hold onto the
+              thought of January ∞ , 2025, when we'll be together again. These
+              days apart are temporary, but what we have is forever.
+            </p>
+            <p className="text-lg font-bold text-pink-600 mt-6">
+              ∞ days apart, but always side by side in spirit.
+            </p>
+          </div>
+        </section>
+
         <section id="milestones" className="milestones-section py-16">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-pink-600 mb-8">
@@ -113,6 +135,15 @@ function App() {
               </li>
               <li className="text-lg mb-4">
                 <strong>28 August 2024</strong> - First Vacation
+              </li>
+              <li className="text-lg mb-4">
+                <strong>20 September 2024</strong> – We began our long-distance
+                chapter. Distance couldn’t stop us from feeling close every day.
+              </li>
+              <li className="text-lg mb-4">
+                <strong>SOON</strong> – The day we reunite after ∞ days apart.
+                Finally, the distance ends, and we can hold each other close
+                again.
               </li>
               <li className="text-lg mb-4">
                 <strong>SOON</strong> - Anniversary Celebration
