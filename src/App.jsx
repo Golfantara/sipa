@@ -136,15 +136,15 @@ function App() {
               <li className="text-lg mb-4">
                 <strong>28 August 2024</strong> - First Vacation
               </li>
-              <li className="text-lg mb-4">
+              {/* <li className="text-lg mb-4">
                 <strong>20 September 2024</strong> – We began our long-distance
                 chapter. Distance couldn’t stop us from feeling close every day.
-              </li>
-              <li className="text-lg mb-4">
+              </li> */}
+              {/* <li className="text-lg mb-4">
                 <strong>SOON</strong> – The day we reunite after ∞ days apart.
                 Finally, the distance ends, and we can hold each other close
                 again.
-              </li>
+              </li> */}
               <li className="text-lg mb-4">
                 <strong>SOON</strong> - Anniversary Celebration
               </li>
