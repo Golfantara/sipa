@@ -8,25 +8,22 @@ import bgsongs from "../src/assets/Lady Gaga, Bruno Mars - Die With A Smile (Off
 import { useState, useRef } from "react";
 
 function App() {
-  const [isPlaying, setIsPlaying] = useState(false); // For controlling when music starts
-  const [selectedImage, setSelectedImage] = useState(null); // For full-screen image
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
   const audioRef = useRef(null);
 
-  // Start music on button click
   const startMusic = () => {
     if (audioRef.current) {
-      audioRef.current.muted = false; // Unmute the audio
-      audioRef.current.play(); // Play the audio
-      setIsPlaying(true); // Hide the welcome screen
+      audioRef.current.muted = false;
+      audioRef.current.play();
+      setIsPlaying(true);
     }
   };
 
-  // Handle image click to display full-screen
   const handleImageClick = (imageSrc) => {
     setSelectedImage(imageSrc);
   };
 
-  // Close the full-screen view
   const closeFullscreen = () => {
     setSelectedImage(null);
   };
@@ -34,7 +31,6 @@ function App() {
   return (
     <>
       <div className="bg-[#F7EED3]">
-        {/* Audio element */}
         <audio ref={audioRef} loop>
           <source src={bgsongs} type="audio/mpeg" />
           Your browser does not support the audio element.
@@ -136,15 +132,6 @@ function App() {
               <li className="text-lg mb-4">
                 <strong>28 August 2024</strong> - First Vacation
               </li>
-              {/* <li className="text-lg mb-4">
-                <strong>20 September 2024</strong> – We began our long-distance
-                chapter. Distance couldn’t stop us from feeling close every day.
-              </li> */}
-              {/* <li className="text-lg mb-4">
-                <strong>SOON</strong> – The day we reunite after ∞ days apart.
-                Finally, the distance ends, and we can hold each other close
-                again.
-              </li> */}
               <li className="text-lg mb-4">
                 <strong>SOON</strong> - Anniversary Celebration
               </li>
@@ -164,7 +151,7 @@ function App() {
           <h2 className="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
             <a href="https://www.instagram.com/syifazzaa/">
               <span className="self-center text-blue-700 underline">
-                @syifaazzaaa
+                @syifazzaa
               </span>
             </a>
           </h2>
